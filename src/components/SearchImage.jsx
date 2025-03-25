@@ -10,7 +10,7 @@ const SearchImage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const navigate = useNavigate();
 
-  const API_KEY = 'EPEIA1Sc1EwNr5NNvYSiNmAooYOKGVuQtNRm3me07qN1yMjZZhF9hlXw';
+  const API_KEY = import.meta.env.VITE_PEXELS_API_KEY;
 
   const handleInput = async (e) => {
     e.preventDefault();
